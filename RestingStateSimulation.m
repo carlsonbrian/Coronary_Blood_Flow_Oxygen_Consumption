@@ -11,20 +11,20 @@ Fdata = data(:,1);
 tdata = (0:(length(Pao)-1)).*dt;
 
 figure(1); clf; axes('position',[0.15 0.15 0.75 0.75]); hold on;
-plot(tdata,Plv,'k-','linewidth',1.5,'color',0.5*[1 1 1]);
-plot(tdata,Pao,'k-','linewidth',1.5);
-set(gca,'Fontsize',14); box on
-xlabel('time (sec)','interpreter','latex','fontsize',16);
-ylabel('Pressure (mmHg)','interpreter','latex','fontsize',16);
-axis([5 10 0 160]);
+plot(tdata,Plv,'k-','linewidth',3,'color',0.5*[1 1 1]);
+plot(tdata,Pao,'k-','linewidth',3);
+set(gca,'Fontsize',18); box on
+xlabel('time (sec)','interpreter','latex','fontsize',20);
+ylabel('Pressure (mmHg)','interpreter','latex','fontsize',20);
+axis([5 10 0 180]);
 legend('LV','Aorta');
 
 figure(2); clf; axes('position',[0.15 0.15 0.75 0.75]); hold on;
-plot(tdata,Plv,'k-','linewidth',1.5,'color',0.5*[1 1 1]);
-plot(tdata,Pao,'k-','linewidth',1.5);
-set(gca,'Fontsize',14); box on
-xlabel('time (sec)','interpreter','latex','fontsize',16);
-ylabel('Pressure (mmHg)','interpreter','latex','fontsize',16);
+plot(tdata,Plv,'k-','linewidth',2,'color',0.5*[1 1 1]);
+plot(tdata,Pao,'k-','linewidth',2);
+set(gca,'Fontsize',16); box on
+xlabel('time (sec)','interpreter','latex','fontsize',18);
+ylabel('Pressure (mmHg)','interpreter','latex','fontsize',18);
 axis([0 10 -2 180]);
 legend('LV','Aorta');
 %%
@@ -162,10 +162,10 @@ figure(4); clf; axes('position',[0.15 0.15 0.75 0.75]);  hold on;
 plot(tdata,Fdata,'color',0.5*[1 1 1],'linewidth',3);
 %l = legend('data','model'); 
 %set(l,'fontsize',12,'location','northeast');
-set(gca,'fontsize',14); box on;
-ylabel('Myocardial flow (mL/min)','interpreter','latex','fontsize',16);
-xlabel('time (sec)','interpreter','latex','fontsize',16);
-axis([0 10 -25 180]); grid
+set(gca,'fontsize',18); box on;
+ylabel('Myocardial flow (mL/min)','interpreter','latex','fontsize',20);
+xlabel('time (sec)','interpreter','latex','fontsize',20);
+axis([5 10 -25 160]); grid
 
 % figure(4); clf; axes('position',[0.15 0.15 0.75 0.75]); hold on;
 % plot(t,60*Xout(:,2),'color','r','linewidth',1.5); 

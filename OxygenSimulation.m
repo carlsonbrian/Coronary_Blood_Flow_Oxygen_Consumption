@@ -75,17 +75,17 @@ set(gca,'fontsize',14); box on;
 ylabel('Oxygen Saturation','interpreter','latex','fontsize',16);
 xlabel('time (sec)','interpreter','latex','fontsize',16);
 axis([0 10 -0.1 0.35]); grid
-
+%%
 figure(8); clf; axes('position',[0.15 0.15 0.75 0.75]);  hold on;
-plot(tOxy,c_23,'-r','linewidth',1.5); 
-plot(tOxy,c_22,'-g','linewidth',1.5); 
-plot(tOxy,c_21,'-b','linewidth',1.5); 
+plot(tOxy,c_23,'-r','linewidth',3); 
+plot(tOxy,c_22,'-g','linewidth',3); 
+plot(tOxy,c_21,'-b','linewidth',3); 
 l = legend('endo out','mid out','epi out'); 
-set(l,'fontsize',12,'location','southeast');
-set(gca,'fontsize',14); box on;
-ylabel('Oxygen Saturation','interpreter','latex','fontsize',16);
-xlabel('time (sec)','interpreter','latex','fontsize',16);
-axis([5 10 -0.2 0.45]); grid
+set(l,'fontsize',16,'location','southeast');
+set(gca,'fontsize',20); box on;
+ylabel('Oxygen Saturation','interpreter','latex','fontsize',24);
+xlabel('time (sec)','interpreter','latex','fontsize',24);
+axis([5 10 -0.2 0.55]); grid
 
 
 % figure(7); clf; axes('position',[0.15 0.15 0.75 0.75]);  hold on;
